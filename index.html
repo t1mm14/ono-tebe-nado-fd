@@ -11,10 +11,11 @@
   </head>
   <body>
     <header class="header">
+      <!-- Правка: маркер между ссылками — list-style circle, у «главная» его нет -->
       <nav class="header__menu">
         <ul class="header__list">
           <li class="header__item">
-            <a class="header__link" href="#">главная</a>
+            <a class="header__link header__link_active" href="#">главная</a>
           </li>
           <li class="header__item">
             <a class="header__link" href="#lots">посмотреть лоты</a>
@@ -27,20 +28,21 @@
       <a class="header__logo" href="#">
         <img src="./images/logo-black.svg" alt="Оно тебе надо" />
       </a>
+      <!-- Правка: адресный блок справа, текст слева, перенос как в макете -->
       <address class="address address_header">
         <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
+        <br />
         <a class="address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <p class="address__text">наб. Принсенграхт 263-265, Амстердам</p>
+        <p class="address__text">наб. Принсенграхт 263-265,<br />Амстердам</p>
       </address>
     </header>
 
     <main>
       <section class="cover">
-        <h1 class="cover__title">
-          <span class="cover__line">оно</span>
-          <span class="cover__line cover__line_center">тебе</span>
-          <span class="cover__line cover__line_right">надо</span>
-        </h1>
+        <!-- Правка: тот же оверлей, что и у карточек лотов -->
+        <div class="overlay"></div>
+        <!-- Правка: межбуквенные интервалы 30px и 60px по макету -->
+        <h1 class="cover__title">о<span class="cover__letter_wide">но</span><span class="cover__line cover__line_center">те<span class="cover__letter_wide">бе</span></span><span class="cover__line cover__line_right"><span class="cover__letter_wide">н</span>ад<span class="cover__letter_tight">о</span></span></h1>
         <div class="cover__bottom">
           <p class="cover__caption">Аукцион вещей, в которые никто не верил</p>
           <button class="cover__button" type="button">Сделать ставку</button>
@@ -52,6 +54,7 @@
         <ul class="lots__list">
           <li class="lots__item">
             <article class="card card_film">
+              <div class="overlay"></div>
               <h3 class="card__title">
                 Фильм режиссёра, который бросил киношколу
               </h3>
@@ -63,6 +66,7 @@
           </li>
           <li class="lots__item">
             <article class="card card_book">
+              <div class="overlay"></div>
               <h3 class="card__title">
                 Книга, где описан один скучный день из жизни рекламного агента
               </h3>
@@ -78,6 +82,7 @@
           </li>
           <li class="lots__item">
             <article class="card card_picture">
+              <div class="overlay"></div>
               <h3 class="card__title">
                 Картина, которую повторит даже 5-летний сын маминой подруги
               </h3>
@@ -128,12 +133,13 @@
     <footer class="footer">
       <address class="address">
         <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
+        <br />
         <a class="address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <p class="address__text">наб. Принсенграхт 263-265, Амстердам</p>
+        <p class="address__text">наб. Принсенграхт 263-265,<br />Амстердам</p>
       </address>
       <nav class="footer__menu">
         <ul class="footer__list">
-          <li><a class="footer__link" href="#">главная</a></li>
+          <li><a class="footer__link footer__link_active" href="#">главная</a></li>
           <li><a class="footer__link" href="#lots">посмотреть лоты</a></li>
           <li><a class="footer__link" href="#about">об аукционе</a></li>
         </ul>
