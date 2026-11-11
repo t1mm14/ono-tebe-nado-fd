@@ -1,1 +1,0 @@
-https://github.com/t1mo4ka-code/ono-tebe-nado-fd
