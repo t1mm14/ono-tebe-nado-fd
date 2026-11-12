@@ -83,8 +83,8 @@
   color: #fff;
 }
 
-/* Правка: типографика cover. Базовый интервал 30px, у части букв 60px,
-   у последней «о» интервал сброшен, чтобы строка не вылезала за край. */
+/* Правка: типографика cover. Межбуквенный интервал везде 30px,
+   у последних букв строк интервал сброшен, чтобы строки не смещались. */
 .cover__title {
   margin-bottom: 135px;
   font-size: 100px;
@@ -94,10 +94,11 @@
   text-transform: uppercase;
 }
 
+/* Правка: каждая строка — 115px интерлиньяж + 20px отступ, как в макете. */
 .cover__line {
   display: block;
   padding-top: 20px;
-  line-height: 100%;
+  line-height: 115%;
 }
 
 .cover__line_center {
@@ -108,10 +109,6 @@
   text-align: right;
 }
 
-.cover__letter_wide {
-  letter-spacing: 60px;
-}
-
 .cover__letter_tight {
   letter-spacing: 0;
 }
@@ -120,7 +117,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 32px;
 }
 
 .cover__caption {
@@ -182,7 +178,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  min-height: 563px;
+  min-height: 598px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
